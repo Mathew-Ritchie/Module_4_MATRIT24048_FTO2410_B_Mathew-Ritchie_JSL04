@@ -6,10 +6,6 @@
 
 let userPreference = "Sugar-free"; // Possible values: 'Regular', 'Sugar-free', or undefined
 let message = userPreference === "Sugar-free" ? "Sugar-free" : "Regular";
-
-//function userChoice(userPreference) {
-// return userPreference === "Sugar-free" ? "Sugar-free" : "Regular";
-//}
 console.log(`The users preferes is ${message}`);
 
 // #### Challenge 2: Stock Check
@@ -24,15 +20,19 @@ console.log(`${stockMessage}`);
 // Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout.
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
-let heartRate = 95; // Current heart rate in bpm
-console.log(`'}`);
+let heartRate = 120; // Current heart rate in
+let anotherDrink =
+  heartRate < 100 ? "Boost needed!" : "Energy levels are high!";
+console.log(`${anotherDrink}`);
 
 // #### Challenge 4: Temperature Suitability
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!"
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
 let currentTemp = 4; // Current temperature in °C
-console.log(``);
+let tempMessage =
+  currentTemp <= 5 ? "Chilled to perfection!" : "Needs a cooler!";
+console.log(`${tempMessage}`);
 
 // #### Challenge 5: Late Night Coding Session
 // Determine if it's a good idea to have a Monster Energy drink based on the current hour.
